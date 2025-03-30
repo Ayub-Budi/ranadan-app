@@ -153,6 +153,8 @@
       },
       submit() {
         this.landingStore.komentar(this.form)
+        this.form.komentar = ""
+        this.landingStore.listKomentar()
       }
     },
   };
