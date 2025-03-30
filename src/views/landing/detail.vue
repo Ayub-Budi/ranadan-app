@@ -54,8 +54,8 @@
               Pesan dari yang lain
             </p>
   
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5" v-for="(item, index) in landingStore?.komentars" :key="index">
-              <div class="border-2 bg-white rounded-[16px] p-2" data-aos="flip-left" data-aos-offset="200">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <div class="border-2 bg-white rounded-[16px] p-2" data-aos="flip-left" data-aos-offset="200"  v-for="(item, index) in landingStore?.komentars" :key="index">
                 <div class="flex items-center gap-3">
                   <div class="bg-[#01796F] w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-white">
                     {{ $initial(item?.penerima?.nama) }}
